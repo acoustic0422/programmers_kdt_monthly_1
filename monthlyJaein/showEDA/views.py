@@ -1,14 +1,14 @@
 from django.shortcuts import render, HttpResponse
-import nbconvert
 
 # Create your views here.
 def index(request):
     return render(request,'index.html')
 
 def post(request):
-    f = open('./showEDA/EDA_files/EDA_for_Monthly_Project.txt', 'r', encoding='utf-8')
+    f = open('./showEDA/EDA_files/EDA_for_Monthly_Project.html', 'r', encoding='utf-8')
     test_text = f.read()
     return render(request, 'post.html', {"test": test_text})
+    # return render(request, 'post.html')
 
 def about(request):
     return render(request, 'about.html')
