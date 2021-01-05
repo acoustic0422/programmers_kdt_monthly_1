@@ -27,6 +27,7 @@ DEBUG = False
 # DEBUG = bool(os.environ.get('DJANGO_DEBUG', False))
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', '.pythonanywhere.com']
+# ALLOWED_HOSTS = ['*']
 
 # Application definition
 
